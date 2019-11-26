@@ -13,6 +13,7 @@
  * <h2>Components</h2>
  * \li MSP430
  * \li CC2420
+ * \li SHT11
  *
  * @{
  *
@@ -72,9 +73,9 @@ extern "C" {
  * @name    LED pin definitions and handlers
  * @{
  */
-#define LED0_PIN                    GPIO_PIN(4, 0)
-#define LED1_PIN                    GPIO_PIN(4, 1)
-#define LED2_PIN                    GPIO_PIN(4, 2)
+#define LED0_PIN                    GPIO_PIN(4, 0)   //P5.4 ?  en catálogo(revisar en otro)
+#define LED1_PIN                    GPIO_PIN(4, 1)   //P5.5 ?
+#define LED2_PIN                    GPIO_PIN(4, 2)   //P5.6 ?
 
 #define LED_OUT_REG                 P5OUT
 #define LED0_MASK                   (0x10)
@@ -107,6 +108,16 @@ extern "C" {
 #define CC2420_PARAM_VREFEN         GPIO_PIN(P4, 5)
 #define CC2420_PARAM_RESET          GPIO_PIN(P4, 6)
 /** @} */
+  
+/**
+ * @name   Configure on-board SHT11 device
+ * @{
+ */
+#define SHT1X_PARAM_CLK             (GPIO_PIN(3, 5))  //en msb-430 || P1.6 en catálogo telosb (?) comprobar en otro catálogo
+#define SHT1X_PARAM_DATA            (GPIO_PIN(3, 4))  //en msb-430 || P1.5  "
+                                                               // PWR P1.7  "
+/** @} */  
+  
 
 #ifdef __cplusplus
 }
