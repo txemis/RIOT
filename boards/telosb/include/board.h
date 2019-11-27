@@ -73,7 +73,7 @@ extern "C" {
  * @name    LED pin definitions and handlers
  * @{
  */
-#define LED0_PIN                    GPIO_PIN(4, 0)   //P5.4 ?  en catálogo(revisar en otro)
+#define LED0_PIN                    GPIO_PIN(4, 0)   //P5.4 ?  en catálogo(revisar en otro/pero fuciona con los primeros)
 #define LED1_PIN                    GPIO_PIN(4, 1)   //P5.5 ?
 #define LED2_PIN                    GPIO_PIN(4, 2)   //P5.6 ?
 
