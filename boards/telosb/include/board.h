@@ -113,10 +113,14 @@ extern "C" {
  * @name   Configure on-board SHT11 device
  * @{
  */
-#define SHT1X_PARAM_CLK             (GPIO_PIN(3, 5))  //en msb-430 || P1.6 en catálogo telosb (?) comprobar en otro catálogo
-#define SHT1X_PARAM_DATA            (GPIO_PIN(3, 4))  //en msb-430 || P1.5  "
+//#define SHT1X_PARAM_CLK             (GPIO_PIN(3, 5))  //en msb-430 || P1.6 en catálogo telosb (?) comprobar en otro catálogo
+//#define SHT1X_PARAM_DATA            (GPIO_PIN(3, 4))  //en msb-430 || P1.5  "
                                                                // PWR P1.7  "
-/** @} */  
+
+#define SHT1X_PARAM_CLK             (GPIO_PIN(1, 6))
+#define SHT1X_PARAM_DATA            (GPIO_PIN(1, 5))
+
+  /** @} */  
   
 
 #ifdef __cplusplus
